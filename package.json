@@ -1,6 +1,6 @@
 {
   "name": "capacitor-manifest-updater",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This package is used to update the AndroidManifest.xml file for Capacitor projects",
   "main": "index.js",
   "scripts": {

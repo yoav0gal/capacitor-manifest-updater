@@ -8,7 +8,7 @@ describe("capacitor-manifest-updater", () => {
   it("should add permissions to the AndroidManifest.xml", async () => {
     const testManifestPath = join(__dirname, "testAndroidManifest.xml");
     const updateManifestScript = join(__dirname, "./updateManifest.js");
-    const initialContent = "<manifest></manifest>";
+    const initialContent = "<manifest>\n</manifest>";
     writeFileSync(testManifestPath, initialContent);
 
     const permissions = ["android.permission.ACCESS_BACKGROUND_LOCATION"];

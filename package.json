@@ -4,7 +4,11 @@
   "description": "This package is used to update the AndroidManifest.xml file for Capacitor projects",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "build": "tsc",
+    "pretest": "npm run build",
+    "test": "vitest",
+    "prepublish": "npm run build",
+    "publish": "npm publish --access public"
   },
   "bin": {
     "update-manifest": "./updateManifest.js"

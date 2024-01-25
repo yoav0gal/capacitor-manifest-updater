@@ -13,7 +13,7 @@ try {
     if (!manifestContent.includes(permission)) {
       manifestContent = manifestContent.replace(
         "</manifest>",
-        `<uses-permission android:name="${permission}" /> \n </manifest>`
+        `\t<uses-permission android:name="${permission}" /> \n</manifest>`
       );
     }
   });

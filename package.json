@@ -1,0 +1,19 @@
+{
+  "name": "capacitor-manifest-updater",
+  "version": "0.0.0",
+  "description": "This package is used to update the AndroidManifest.xml file for Capacitor projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "update-manifest": "./updateManifest.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.6",
+    "typescript": "^5.3.3"
+  }
+}

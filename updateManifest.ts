@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { readFileSync, writeFileSync } from "fs";
 import * as process from "process";
 
@@ -11,8 +12,8 @@ try {
   permissions.forEach((permission) => {
     if (!manifestContent.includes(permission)) {
       manifestContent = manifestContent.replace(
-        "<manifest",
-        `<uses-permission android:name="${permission}" />\n<manifest`
+        "</manifest>",
+        `<uses-permission android:name="${permission}" /> \n </manifest>`
       );
     }
   });

@@ -1,13 +1,16 @@
 {
   "name": "capacitor-manifest-updater",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "This package is used to update the AndroidManifest.xml file for Capacitor projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "bin": {
     "update-manifest": "./updateManifest.js"
+  },
+  "repository": {
+    "url": "https://github.com/yoav0gal/capacitor-manifest-updater"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +18,9 @@
   "devDependencies": {
     "@types/node": "^20.11.6",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "execa": "^8.0.1",
+    "vitest": "^1.2.1"
   }
 }
